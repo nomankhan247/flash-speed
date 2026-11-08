@@ -1,0 +1,14 @@
+name: Feature request
+description: A new module, option, image CDN, host or guide
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: How does it make sites faster?

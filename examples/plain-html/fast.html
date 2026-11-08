@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fast page example</title>
+  <link rel="preconnect" href="https://cdn.example.com">
+  <link rel="preload" href="/images/hero.avif" as="image" fetchpriority="high">
+  <script src="https://cdn.example.com/analytics.js" defer></script>
+  <style>@font-face { font-family: Brand; src: url(/fonts/brand.woff2) format("woff2"); font-display: swap; }</style>
+</head>
+<body>
+  <img src="/images/hero.avif" alt="Hero" width="1200" height="630" fetchpriority="high" loading="eager">
+  <picture>
+    <source type="image/avif" srcset="/images/a.avif">
+    <img src="/images/a.png" alt="A" width="400" height="300">
+  </picture>
+  <img src="/images/b.webp" alt="B" width="400" height="300">
+  <img src="/images/c.webp" alt="C" width="400" height="300" loading="lazy">
+  <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Video" loading="lazy"></iframe>
+</body>
+</html>

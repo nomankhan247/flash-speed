@@ -1,0 +1,33 @@
+name: New audit rule
+description: Suggest something the audit should check
+labels: [rule, enhancement]
+body:
+  - type: input
+    id: id
+    attributes:
+      label: Suggested rule id
+      placeholder: no-sync-xhr
+  - type: textarea
+    id: problem
+    attributes:
+      label: What should it catch?
+      description: Include an HTML snippet that should be flagged and one that shouldn't.
+    validations:
+      required: true
+  - type: dropdown
+    id: metric
+    attributes:
+      label: Which metric does it affect?
+      multiple: true
+      options: [LCP, CLS, INP, FCP, TTFB, Page weight]
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A link (web.dev, MDN, Chrome docs, a measurement) that backs it up.
+  - type: checkboxes
+    id: pr
+    attributes:
+      label: Contributing
+      options:
+        - label: I'd like to write this rule myself (see docs/writing-a-rule.md)

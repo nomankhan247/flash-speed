@@ -1,0 +1,87 @@
+{
+  "name": "flash-speed",
+  "version": "0.1.0",
+  "description": "A zero-dependency, framework-agnostic web performance toolkit: cache headers, resource hints, responsive images, Core Web Vitals, performance budgets and an HTML speed audit.",
+  "keywords": [
+    "web-performance",
+    "core-web-vitals",
+    "page-speed",
+    "lighthouse",
+    "performance-budget",
+    "cache-control",
+    "lcp",
+    "cls",
+    "inp",
+    "seo"
+  ],
+  "license": "MIT",
+  "author": "nomankhan247 and Flash Speed contributors",
+  "homepage": "https://github.com/nomankhan247/flash-speed#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomankhan247/flash-speed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nomankhan247/flash-speed/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./headers": {
+      "types": "./dist/headers.d.ts",
+      "default": "./dist/headers.js"
+    },
+    "./hints": {
+      "types": "./dist/hints.d.ts",
+      "default": "./dist/hints.js"
+    },
+    "./images": {
+      "types": "./dist/images.d.ts",
+      "default": "./dist/images.js"
+    },
+    "./embeds": {
+      "types": "./dist/embeds.d.ts",
+      "default": "./dist/embeds.js"
+    },
+    "./vitals": {
+      "types": "./dist/vitals.d.ts",
+      "default": "./dist/vitals.js"
+    },
+    "./budget": {
+      "types": "./dist/budget.d.ts",
+      "default": "./dist/budget.js"
+    },
+    "./audit": {
+      "types": "./dist/audit/index.d.ts",
+      "default": "./dist/audit/index.js"
+    }
+  },
+  "bin": {
+    "flash-speed": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.js",
+    "audit:example": "node dist/cli.js audit examples/plain-html",
+    "prepublishOnly": "npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.6.0"
+  }
+}

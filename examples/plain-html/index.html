@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Slow page example</title>
+  <!-- Deliberately slow: run `npx flash-speed audit examples/plain-html` to see every issue. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
+  <script src="https://cdn.example.com/analytics.js"></script>
+  <style>
+    @import url("/css/extra.css");
+    @font-face { font-family: Brand; src: url(/fonts/brand.woff2) format("woff2"); }
+  </style>
+  <link rel="preload" href="/fonts/brand.woff2" as="font" type="font/woff2">
+</head>
+<body>
+  <img src="/images/hero.jpg" alt="Hero" loading="lazy">
+  <img src="/images/a.png" alt="A" width="400" height="300">
+  <img src="/images/b.webp" alt="B" width="400" height="300">
+  <img src="/images/c.webp" alt="C" width="400" height="300">
+  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video"></iframe>
+</body>
+</html>

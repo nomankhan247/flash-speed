@@ -1,0 +1,27 @@
+name: Bug report
+description: Something is broken, or a rule flags HTML that is actually fine
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you ran, what you expected and what you got.
+    validations:
+      required: true
+  - type: textarea
+    id: html
+    attributes:
+      label: HTML or code to reproduce
+      description: The smallest snippet that shows the problem.
+      render: html
+  - type: input
+    id: version
+    attributes:
+      label: Flash Speed version
+      placeholder: "0.1.0"
+  - type: input
+    id: node
+    attributes:
+      label: Node.js version (or browser)
+      placeholder: "22.11.0"
