@@ -15,7 +15,13 @@
     "seo"
   ],
   "license": "MIT",
-  "author": "nomankhan247 and Flash Speed contributors",
+  "author": {
+    "name": "Noman Khan",
+    "url": "https://fyme.agency"
+  },
+  "contributors": [
+    "Flash Speed contributors (https://github.com/nomankhan247/flash-speed/graphs/contributors)"
+  ],
   "homepage": "https://github.com/nomankhan247/flash-speed#readme",
   "repository": {
     "type": "git",
