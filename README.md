@@ -125,6 +125,10 @@ A ready-made GitHub Actions job is in [docs/ci.md](docs/ci.md).
 
 Flash Speed is built so that anyone can add to it. New audit rules, URL builders for more image CDNs, header presets for more hosts, framework guides and bug reports are all welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) to get set up, and see issues labelled [`good first issue`](https://github.com/nomankhan247/flash-speed/labels/good%20first%20issue).
 
+## Maintainers
+
+Flash Speed was created and is maintained by [Noman Khan](https://github.com/nomankhan247), Founder & CEO of [fyme.agency](https://fyme.agency).
+
 ## License
 
-[MIT](LICENSE) © nomankhan247 and Flash Speed contributors
+[MIT](LICENSE) © Noman Khan ([fyme.agency](https://fyme.agency)) and Flash Speed contributors
