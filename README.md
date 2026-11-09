@@ -129,6 +129,10 @@ Flash Speed is built so that anyone can add to it. New audit rules, URL builders
 
 Flash Speed was created and is maintained by [Noman Khan](https://github.com/nomankhan247), Founder & CEO of [fyme.agency](https://fyme.agency).
 
+Follow Noman for web performance and SEO updates:
+
+[X / Twitter](https://x.com/heytonoman) · [LinkedIn](https://www.linkedin.com/in/noman-semantic-seo/) · [YouTube](https://www.youtube.com/@heytonoman) · [Facebook](https://www.facebook.com/nomansemanticseo/) · [Pinterest](https://www.pinterest.com/heytonoman/) · [Reddit](https://www.reddit.com/user/Noman__Khan/)
+
 ## License
 
 [MIT](LICENSE) © Noman Khan ([fyme.agency](https://fyme.agency)) and Flash Speed contributors
